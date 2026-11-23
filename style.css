@@ -17,6 +17,7 @@
 
 * {
     font-family: "Roboto";
+    box-sizing: border-box;
 }
 
 /*** structure ***/
@@ -43,6 +44,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 16px;
 }
 
 ul {
@@ -56,7 +58,7 @@ ul {
     display: flex;
     flex-direction: row;
     gap:50px;
-    padding: 100px;
+    padding: 100px 0px;
 }
 
 .section1-content {
@@ -77,12 +79,16 @@ ul {
 }
 
 .section2 {
-
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section2 h2 {
+    font-size: 36px;
     text-align: center;
-    margin: 60px 0px;
+    margin-bottom: 50px;
 }
 
 
@@ -110,6 +116,70 @@ ul {
     object-fit: cover;
     border-radius: 16px;
 }
+
+.section3 {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotebox {
+    width: 1100px;
+}
+
+.quotebox p {
+    text-align: center;
+}
+
+.quotebox h1 {
+    text-align: right;
+}
+
+.section4 {
+    display: flex;
+    align-items: center;
+    height: 320px;
+}
+
+.cta {
+    background-color: red;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 16px;
+    border-style: none;
+    gap: 300px;
+}
+
+.cta-info h3 {
+    margin: 0;
+}
+
+.cta-info p {
+    margin: 10px 0 0 0;
+}
+
+.cta button {
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 16px;
+    background-color: transparent;
+    border: 2px solid #ffffff ;
+    color: #ffffff;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
 
 /*** text decoration ***/
 
@@ -140,7 +210,7 @@ header, .section1, footer {
     border-style: none;
 }
 
-.quotebox {
+.section3 {
     background-color: #e5e7eb;
 }
 
